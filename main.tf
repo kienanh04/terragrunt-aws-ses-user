@@ -18,7 +18,8 @@ locals = {
 
 # main module:
 module "ses_user" {
-  source  = "git::https:/github.com/thanhbn87/terraform-aws-ses-user.git?ref=tags/0.1.1"
+#  source  = "git::https:/github.com/thanhbn87/terraform-aws-ses-user.git?ref=tags/0.1.1"
+  source  = "git::https:/github.com/kienanh04/terraform-aws-ses-user.git?ref=tags/0.1.1"
   enabled = "${var.enabled}"
   
   ses_user      = "${local.ses_user}"
